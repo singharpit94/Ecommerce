@@ -1,0 +1,21 @@
+<html>
+	<head>
+	<title>
+		Entry page
+	</title>
+	</head>
+	<body>
+	<h2>
+		Please enter your objective:<br />
+	</h2>
+	<p>
+		Option 1: Make a group and give the test<br />
+		Option 2: Evaluate the status of an existing group<br />
+		<br />
+		<br><a href=groupmaking.html>Option 1</a>
+		<br><a href=evaluation.html>Option 2</a>
+	</p>
+	</h2>
+	</body>
+</html>
+

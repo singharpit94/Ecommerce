@@ -1,0 +1,46 @@
+<?php
+
+	$groupname=$_POST["group"];
+	//echo $groupname;
+
+$servername = "localhost";
+$username = "root";
+$password = "tubul8794";
+$dbname = "Studentproject";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+}
+
+$sql="SELECT * FROM grouplist WHERE name='$groupname' ";
+$result=$conn->query($sql);
+$row=$result->fetch_assoc();
+//$marks=$row["marks"];
+$id=$row["id"];
+
+//$gid=$row["id"];
+$status=$row["status"];
+$marks=$row["marks"];
+
+//echo $gid;
+$sql="SELECT * FROM studentlist WHERE group_id='$id' ";
+$result=$conn->query($sql);
+while($row=$result->fetch_assoc())
+{
+	echo $row["name"];
+	echo "</br>";
+}
+echo "Marks obtained:";
+echo $marks;
+echo "</br>";
+if($status==1)
+	echo "Selected";
+else
+	echo "Not Selected";
+
+//$conn->close();
+
+?>

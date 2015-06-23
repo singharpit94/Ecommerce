@@ -1,0 +1,83 @@
+<?php
+
+	$groupname=$_POST["groupname"];
+	$name1=$_POST["student1"];
+	$name2=$_POST["student2"];
+	$name3=$_POST["student3"];
+	//echo $groupname;
+	//echo $name1;
+	//echo $name2;
+	//echo $name3;
+
+$servername = "localhost";
+$username = "root";
+$password = "tubul8794";
+$dbname = "Studentproject";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+}
+$check=0;
+$sql="SELECT * FROM studentlist";
+$result= $conn->query($sql);
+while($row=$result->fetch_assoc())
+{
+	if($row['name']==$name1 or $row['name']==$name2 or $row['name']==$name3)
+		$check=1;
+}
+if($check==1)
+{
+	echo "Student already exists!!";
+	echo "</br>"."<a href=groupmaking.html>Click Here to GO BACK</a>";
+} 
+
+$sql="SELECT * FROM grouplist";
+$result=$conn->query($sql);
+$check=0;
+while($row=$result->fetch_assoc())
+{
+	if($row['name']==$groupname)
+		$check=1;
+}
+if($check==1)
+{
+	echo "Group name already taken!!";
+	echo "</br>"."<a href=groupmaking.html>Click Here to GO BACK</a>";
+	
+}
+		
+if($check==0){
+$sql="INSERT INTO grouplist(name) VALUES('$groupname')";
+if($conn->query($sql)===TRUE)
+	echo "Group added";
+ 
+$sql="SELECT * FROM grouplist WHERE name ='$groupname' ";
+$result = $conn->query($sql);
+$row=$result->fetch_assoc();
+
+$gid=$row["id"];
+//echo $gid;
+$sql="INSERT INTO studentlist(name,group_id) VALUES('$name1','$gid')";
+if($conn->query($sql) === TRUE)
+	echo "Student1 added";
+
+$sql="INSERT INTO studentlist(name,group_id) VALUES('$name2','$gid')";
+if($conn->query($sql) === TRUE)
+	echo "Student2 added";
+
+$sql="INSERT INTO studentlist(name,group_id) VALUES('$name3','$gid')";
+if($conn->query($sql) === TRUE)
+	echo "Student3 added";
+
+echo "Group successfully formed!!"
+echo "</br>"."<a href=quiz.html>CLICK HERE TO TAKE THE QUIZ</a>"; 
+}
+$conn->close();
+?>
+
+
+
+

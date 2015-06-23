@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>
+    	Status of team
+    </title>
+</head>
+<style>
+	body
+	{
+
+		background-image: url("./images.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	h2
+	{
+		color: green;
+		text-align: center;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	p
+	{
+		text-align: center;
+	}
+</style>
+<body>
+	
+	
+	<h3><br /><br /><br />Enter the name of the group </h3>
+	<br />
+	<p>
+  	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-6">
+			<div class="input-group">
+  			<input type="text" name="groupname" class="form-control" placeholder="Group Name" aria-describedby="basic-addon2">
+  			<form action="status.php" method="post">
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>		
+	</p>
+
+	<h3><br />Re-enter the name of the group </h3>
+	<p>
+  	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-6">
+			<div class="input-group">
+  			<input type="text" name="groupname" class="form-control" placeholder="Group Name" aria-describedby="basic-addon2">
+  			<form action="status.php" method="post">
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>		
+	</p>
+
+
+	<p>
+		<input class="btn btn-default" type="submit" value="SUBMIT">
+	</p>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<?php
+	$ans1=$_POST["answer1"];
+	$ans2=$_POST["answer2"];
+	$ans3=$_POST["answer3"];
+	$ans4=$_POST["answer4"];
+	$ans5=$_POST["answer5"];
+	$groupname=$_POST["groupname"];
+
+$servername = "localhost";
+$username = "root";
+$password = "tubul8794";
+$dbname = "Studentproject";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+}
+
+$sql="SELECT * FROM grouplist WHERE name='$groupname' ";
+$result=$conn->query($sql);
+$row=$result->fetch_assoc();
+//$marks=$row["marks"];
+$id=$row["id"];
+if($ans1=="TWO")
+	$marks=$marks+10;
+if($ans2=="STACK")
+	$marks=$marks+10;
+if($ans3=="DELETION")
+	$marks=$marks+10;
+if($ans4=="BACKTRACKING")
+	$marks=$marks+10;
+if($ans5=="NO")
+	$marks=$marks+10;
+$sql="UPDATE grouplist SET marks='$marks' WHERE name='$groupname' ";
+if($conn->query($sql))
+	echo "Marks updated! ";
+echo $marks;
+$status=0;
+if($marks>=40)
+	$status=1;
+$sql="UPDATE grouplist SET status='$status' WHERE name='$groupname' ";
+if($conn->query($sql))
+	echo "Status updated";
+if($status==1)
+	echo "Selected!";
+else
+	echo "Not selected!";
+$sql="UPDATE studentlist SET status='$status' WHERE group_id='$id' ";
+if($conn->query($sql))
+	echo "Students' status is updates!";
+ 
+$conn->close();
+?>
+	

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>
+		Status Check 1
+	</title>
+<head>
+<body>
+	
+	<p>
+	<form>
+	<form action="status.php" method="post">
+	Enter the name of the group </br >
+	<input type="text" name="group"> </br >
+	</form>
+	<input type="submit">
+	</p>
+</body>
+</html>
+

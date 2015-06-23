@@ -1,0 +1,62 @@
+/*my css file*/
+
+body {
+	background: url(../Images/nk3.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: 100% 100%;
+     overflow: hidden;
+    }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(BuxtonSketch.ttf);
+}
+@font-face {
+    font-family: mySecondFont;
+    src: url(COOPBL.ttf);
+}
+.header{
+         display :block;
+         padding-left:550px;
+		 color: blue;
+		 font-size: 50px;
+		
+		
+		 position:relative;
+		 
+	
+		}
+.teams_a{
+   background-color: rgba(132, 62, 167, 0.9);
+  
+ }
+ 
+ .teams_b{
+   background: rgba(220, 214, 56, 0.5);
+ }
+ 
+.teams_a,.teams_b{
+          
+		  padding-left:70px;
+		  float:left;
+          color: rgba(15, 29, 29, 1);
+		  font-size: 30px;
+		  font-style: normal;
+                  
+		  padding-bottom:100px;
+		  width:200px;
+		  height:80px;
+		  margin: 20px 5px;
+          z-index: 0;
+         -moz-border-radius: 5px 5px 0 0;
+         -webkit-border-radius: 5px;
+          border-radius: 10px 10px 10px 0;
+		  border: 2px solid black;
+		  }
+.team{
+     padding-left:100px;
+	 position:relative;
+	 top:-30px;
+	 }

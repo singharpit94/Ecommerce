@@ -1,0 +1,29 @@
+<html>
+<head>
+	Group formation
+<head>
+<body>
+	<p>
+	Enter the details of the group
+	<form action="makegroup.php" method="post">
+	Enter the name of the group <br />
+	<input type="text" name="groupname">
+	
+	<br />
+	<form action="makegroup.php" method="post">
+	Name of student 1 <br />
+	<input type="text" name="student1">
+
+	<br />
+	<form action="makegroup.php" method="post">
+	Name of student 2 <br />
+	<input type="text" name="student2">
+	<input type="submit">
+
+	<br />
+	<form action="makegroup.php" method="post">
+	Name of student 3 <br />
+	<input type="text" name="student3">
+	</p>
+</body>
+</html>

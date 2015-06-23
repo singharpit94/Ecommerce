@@ -1,0 +1,140 @@
+/* it includes body background and the scrollbar content */
+@font-face {
+    font-family: ConfettiStream;
+    src: url(ConfettiStream.ttf);
+}
+body
+  {
+     background: url(../Images/nk1.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;                 /*fits the background*/
+    text-align: center; padding: 70px;         /*image at the center*/
+    overflow: hidden;                           /*Hides the scrollbar*/
+     font-family: 'ConfettiStream';
+     font-size: 30px;
+     color: #47494f;
+  }
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- GENERAL ---------- */
+a {
+	color: #ea4c89;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #df3e7b;
+}
+
+h4 {
+	color: #e59c41;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	bottom: 0;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+/* ---------- CLASSES ---------- */
+
+.container {
+	height: 312px;
+	left: 50%;
+	margin: -156px 0 0 -206px;
+	position: absolute;
+	top: 50%;
+	width: 412px;
+}
+
+.button {
+	background: #0084b4;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 4px 8px;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
+.button:hover {
+	background: #2D76B9;
+	color: #fff;
+}
+
+/* ---------- IMAGE-CONTAINER ---------- */
+
+.image-container {
+	overflow: hidden;
+	position: relative;
+	width: 700px;
+}
+
+.image-container img {
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.image-container:hover img {
+	-webkit-transform: translateY(-45px);
+	-moz-transform: translateY(-45px);
+	-ms-transform: translateY(-45px);
+	-o-transform: translateY(-45px);
+	transform: translateY(-45px);
+}
+
+.image-container:hover figcaption {
+	background: rgba(40,52,73,0.4);
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform .4s, opacity .1s;
+	-moz-transition: -moz-transform .4s, opacity .1s;
+	-ms-transition: -ms-transform .4s, opacity .1s;
+	-o-transition: -o-transform .4s, opacity .1s;
+	transition: transform .4s, opacity .1s;
+}
+
+.image-container figcaption {
+	background: #283449;
+	bottom: 0;
+	color: #fff;
+	height: 50px;
+	left: 0;
+	opacity: 0;
+	padding: 20px;
+	position: absolute;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform .4s, opacity .1s .3s;
+	-moz-transition: -moz-transform .4s, opacity .1s .3s;
+	-ms-transition: -ms-transform .4s, opacity .1s .3s;
+	-o-transition: -o-transform .4s, opacity .1s .3s;
+	transition: transform .4s, opacity .1s .3s;
+	width: 360px;
+}
