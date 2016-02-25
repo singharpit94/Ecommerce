@@ -1,0 +1,4 @@
+logs/Thu Jan 28 0-24-36 IST 2016.txt
+8
+manishaagarwal838@gmail.com 2 2 2 1 1 1 1 1 1 1 1 1 2 2 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+shaunak1105@gmail.com 2 2 2 1 1 1 2 2 2 1 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1

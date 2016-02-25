@@ -1,0 +1,347 @@
+html, body { margin: 0; padding: 0; }
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a:active {
+    text-decoration: none;
+}
+
+body {
+    background: #4CAF50;
+    font-family: 'Lato', sans-serif;
+    color: #FDFCFB;
+    text-align: center;
+}
+
+form {
+    width: 450px;
+    margin: 17% auto;
+}
+
+.header {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.description {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    transition: outline .3s ease-in-out;
+}
+
+input[type=text]{
+    background-color: transparent;
+    /* border: none; */
+    /* border-bottom: 1px solid #9e9e9e; */
+    /* border-radius: 0; */
+    /* outline: none; */
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    /* transition: all .3s; */
+}
+
+.button {
+    height: 44px;
+    border: none;
+}
+
+#firstname {
+    margin-top: 10px;
+    width: 100%;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#lastname {
+    margin-top: 10px;
+    width: 100%;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#phonenumber {
+    margin-top: 10px;
+    width: 100%;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#email {
+    margin-top: 10px;
+    width: 100%;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#roll {
+    margin-top: 10px;
+    width: 100%;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#room {
+    margin-top: 10px;
+    width: 100%;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#pass1 {
+    margin-top: 10px;
+    width: 100%;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#pass2 {
+    margin-top: 10px;
+    width: 100%;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+
+}
+
+#submit {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    height: 46px;
+    background: #E53935;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    line-height: 46px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+#submit:hover {
+    background: #ba2d2b;
+}
+
+input:focus {
+
+    outline: 2px solid #E53935;
+
+}
+
+.ripple {
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+
+    animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+#emailstatus{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+}
+
+#roomstatus{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+}
+
+#status{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+    color: #d01d27;
+}
+
+#length_status{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+}
+
+#phone_length_status{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+}
+
+input[type="text"]{
+    background-color: #eeffde;
+}
+
+input[type="password"]{
+    background-color: #eeffde;
+}
+
+
+
+div {
+    margin: 0 0 0.75em 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] {
+    color: blueviolet;
+    font-family: 'Ubuntu', serif;
+    font-size: 14px;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+
+/* Unchecked styles */
+[type="radio"]:not(:checked) + label:before {
+    border-radius: 50%;
+    border: 2px solid #bb2329;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    border-radius: 50%;
+    border: 2px solid #bb2329;
+    z-index: -1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+/* Checked styles */
+[type="radio"]:checked + label:before {
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+[type="radio"]:checked + label:after {
+    border-radius: 50%;
+    border: 2px solid #bb2329;
+    background-color: #bb2329;
+    z-index: 0;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+/* Radio With gap */
+[type="radio"].with-gap:checked + label:before {
+    border-radius: 50%;
+    border: 2px solid #bb2329;
+}
+
+[type="radio"].with-gap:checked + label:after {
+    border-radius: 50%;
+    border: 2px solid #bb2329;
+    background-color: #bb2329;
+    z-index: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #50922c;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #50922c;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #50922c;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #50922c;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color:    #50922c;
+}
